@@ -350,6 +350,9 @@ def datetimetostr(dt):
     else:
         return "%sZ" % dt.isoformat()
 
+def datetostr(dt):
+    return dt.strftime("%Y-%m-%d")
+    
 def timestamptostr(ts):
     """Return a RFC3339 date-time string corresponding to the given
     Unix-epoch timestamp."""
